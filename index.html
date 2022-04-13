@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Main CSS -->
+    <link href="/css/main.css" rel="stylesheet" />
+    <title>YoSoyMarton</title>
+</head>
+
+<body>
+    <!--========== Header ==========-->
+    <header class="container-fluid d-flex justify-content-center header__main">
+        <p class="emergency__contact mb-0 text-light p-2 fs-6">
+            Contacto de emergencia 24 hrs: +52 1 312 133 2750
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand marton__container" href="/index.html">
+                <span class="marton__title">YoSoyMarton</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse principal__menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">
+                            <span class="home__navbar navbar__option equisde">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="dropdown__services navbar__option">Servicios</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item services__item" href="/pages/services/medicine.html">Medicina
+                                    preventiva e interna</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item services__item" href="/pages/services/consult.html">Consulta y
+                                    cirugía</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item services__item" href="/pages/services/image.html">Imagenología y
+                                    estudios de laboratorio</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item services__item"
+                                    href="/pages/services/aesthetic.html">Estética</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">
+                            <span class="navbar__option about__info">Acerca de</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/location.html">
+                            <span class="navbar__option location__span">Ubicación</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 search__input" type="search" placeholder="Buscar"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success search__btn" type="submit">
+                        Buscar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel__container" data-bs-ride="carousel">
+        <div class="carousel-indicators carousel__indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active carousel__item" data-bs-interval="4000">
+            <img src="imgs/logo_slide.png" class="d-block w-100 carousel__img" alt="slide1">
+          </div>
+
+          <div class="carousel-item carousel__item" data-bs-interval="4000">
+            <img src="imgs/logo_slide.png" class="d-block w-100 carousel__img" alt="slide2">
+          </div>
+
+          <div class="carousel-item carousel__item" data-bs-interval="4000">
+            <img src="imgs/logo_slide.png" class="d-block w-100 carousel__img" alt="slide3">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev back__btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next next__btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!-- Intro -->
+    <section class="intro mx-auto w-75 text-center pt-4">
+        <h1 class="introTitle__container p-2 fs-2 border-top border-bottom border-3">
+            <span class="intro__title">
+                Hospital Veterinario YoSoyMarton
+            </span>
+        </h1>
+    </section>
+    <section class="announces container pt-3 text-center">
+        <div class="row">
+            <div class="col">
+                <a href="pages/services/image.html" class="col">
+                    <div class="products__announce articles__announce">
+                        <i class="uil uil-shopping-cart icon__announce"></i>
+                        <br/>
+                        <span class="text__announce">
+                            Tienda
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="pages/services/consult.html">
+                    <div class="products__announce consult__announce">
+                        <i class="uil uil-medkit icon__announce"></i>
+                        <br/>
+                        <span class="text__announce">
+                            Consulta
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="pages/about.html">
+                    <div class="products__announce contact__announce">
+                        <i class="uil uil-comments icon__announce"></i>
+                        <br/>
+                        <span class="text__announce">
+                            Contacto
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

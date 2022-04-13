@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Main CSS -->
+    <link href="/css/about.css" rel="stylesheet" />
+    <title>YoSoyMarton</title>
+</head>
+
+<body>
+    <!--========== Header ==========-->
+    <header class="container-fluid d-flex justify-content-center header__main">
+        <p class="emergency__contact mb-0 text-light p-2 fs-6">
+            Contacto de emergencia 24 hrs: +52 1 312 133 2750
+        </p>
+    </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand marton__container" href="/index.html">
+                <span class="marton__title">YoSoyMarton</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse principal__menu" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">
+                            <span class="home__navbar navbar__option equisde">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="dropdown__services navbar__option">Servicios</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item services__item" href="/pages/services/medicine.html">Medicina
+                                    preventiva e interna</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item services__item" href="/pages/services/consult.html">Consulta y
+                                    cirugía</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item services__item" href="/pages/services/image.html">Imagenología y
+                                    estudios de laboratorio</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item services__item"
+                                    href="/pages/services/aesthetic.html">Estética</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">
+                            <span class="navbar__option about__info">Acerca de</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/location.html">
+                            <span class="navbar__option location__span">Ubicación</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 search__input" type="search" placeholder="Buscar"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success search__btn" type="submit">
+                        Buscar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- About -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase about__title">
+                    Acerca de
+                </h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 pb-4 pb-lg-0">
+                        <img src="/imgs/about_img.jpg" alt="" class="img-fluid rounded-circle w-100 about__img">
+                    </div>
+                    <div class="col-lg-7 div__map">
+                        <h3 class="mb-4 about__subtitle">Lorem ipsum dolor sit amet</h3>
+                        <span class="about__text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Consectetur assumenda eveniet est pariatur cupiditate, 
+                            tempora sunt odio quis. Illum enim saepe aspernatur corrupti 
+                            quam magni vero ex aperiam nemo perferendis.
+                        </span>
+                        <div class="row mb-3 about__data">
+                            <div class="col-sm-6 py-2">
+                                <h6 class="about__sub-subtitle">
+                                    Nombre:
+                                    <span class="about__subtext">
+                                        Martín Ramírez Vallejo
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-6 py-2">
+                                <h6 class="about__sub-subtitle">
+                                    Teléfono:
+                                    <span class="about__subtext">
+                                        312 133 2750
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-6 py-2">
+                                <h6 class="about__sub-subtitle">
+                                    Educacion:
+                                    <span class="about__subtext">
+                                        Médico Veterinario
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-6 py-2">
+                                <h6 class="about__sub-subtitle">
+                                    Experiencia:
+                                    <span class="about__subtext">
+                                        +10 años
+                                    </span>
+                                </h6>
+                            </div>
+                        </div>
+                        <!-- Buttons -->
+                        <a href="/pages/services/consult.html" class="btn btn-outline-primary mr-4">Pide una consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

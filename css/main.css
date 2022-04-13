@@ -1,0 +1,180 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root{
+    /* Colors */
+    --main-color: #01aef2;
+    --title-color: #3f3f95;
+    --title-hover-color: #0076a4;
+    --carousel-background: #28b9f38e;
+    --subtitle-color: #9d8982;
+    --text-color: #FFF;
+    --secondary-text-color: #FFF;
+    --button-color: #FFF;
+    --hover-button-color: #FFF;
+    --salmon-color: #ff5b49;
+    --white-color: #FFF;
+
+    --red-color: #cc1400;
+    --green-color: #00c26e;
+    --blue-color: #1c9dff;
+
+    --red-light: #b81200;
+    --green-light: #00b064;
+    --blue-light: #2692e5;
+
+    /* Font and tipography */
+    --body-font: 'Rubik', sans-serif;
+
+    /* Font weight */
+    --font-medium: 500;
+    --font-semibold: 600;
+}
+
+/* For larger devices */
+@media screen and (min-width:800px){
+    :root{
+        --big-font-size: 3rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+        --h1-size: 2.25rem;
+        --h2-size: 1.5rem;
+        --h3-size: 1.25rem;
+    }
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #000;
+}
+
+.header__main{
+    background: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+.marton__container{
+    background: var(--title-color);
+    border-radius: 5px;
+}
+
+.marton__title{
+    color: #FFF;
+    font-weight: var(--font-medium);
+    padding: 0 1rem;
+}
+
+.navbar__option{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.navbar__option:hover{
+    color: var(--title-hover-color);
+    transition: .3s;
+}
+
+.search__input{
+    border-color: var(--title-color);
+}
+
+.search__btn{
+    border-color: var(--title-color);
+    color: var(--title-color);
+}
+
+.search__btn:hover{
+    color: #FFF;
+    background: var(--title-color);
+}
+
+.carousel__container{
+    width: 100%;
+    margin-top: 0.5rem;
+    background: var(--carousel-background);
+    max-height: 300px;
+}
+
+.carousel-inner{
+    max-height: 30rem;
+}
+
+.carousel__img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    max-height: 300px;
+}
+
+.intro__title{
+    color: var(--title-color);
+}
+
+.products__announce{
+    width: 100%;
+    height: 9rem;
+    border-radius: 1rem;
+    color: var(--white-color);
+}
+
+.articles__announce{
+    background: var(--red-color);
+}
+.articles__announce:hover{
+    background: var(--red-light);
+}
+
+.consult__announce{
+    background: var(--green-color);
+}
+.consult__announce:hover{
+    background: var(--green-light);
+}
+
+.contact__announce{
+    background: var(--blue-color);
+}
+.contact__announce:hover{
+    background: var(--blue-light);
+}
+
+.icon__announce{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.text__announce{
+    font-size: 1.5rem;
+}
+
+/*---------- Medium devices ----------*/
+@media screen and (min-width:568px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+/*----- Large devices -----*/
+@media screen and (min-width: 1024px){
+    .products__announce{
+        width: 70%;
+        height: 10rem;
+    }
+
+    .icon__announce{
+        font-size: 4rem;
+    }
+    
+    .text__announce{
+        font-size: 2rem;
+    }
+}
