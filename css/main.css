@@ -151,12 +151,15 @@ a:hover{
 }
 
 .text__announce{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /*---------- Medium devices ----------*/
 @media screen and (min-width:568px){
-
+    .text__announce{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 768px){
