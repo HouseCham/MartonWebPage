@@ -6,7 +6,7 @@
     --main-color: #01aef2;
     --title-color: #3f3f95;
     --title-hover-color: #0076a4;
-    --carousel-background: #28b9f38e;
+    --carousel-background: #3f3f95;
     --subtitle-color: #9d8982;
     --text-color: #FFF;
     --secondary-text-color: #FFF;
@@ -102,7 +102,7 @@ a:hover{
 
 .products__announce{
     width: 100%;
-    height: 9rem;
+    height: 7.8rem;
     border-radius: 1rem;
     color: var(--white-color);
 }
@@ -143,26 +143,65 @@ a:hover{
 }
 
 .slide__img{
-    max-height: 100vh;
     align-self: center;
+}
+
+.emergency__contact{
+    font-size: 13px;
+}
+
+.carousel__container{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
 /*---------- Medium devices ----------*/
 @media screen and (min-width:568px){
+    .products__announce{
+        height: 9rem;
+    }
+
     .text__announce{
         font-size: 1.5rem;
+    }
+
+    .emergency__contact{
+        font-size: 1.1rem;
     }
 }
 
 @media screen and (min-width: 768px){
+    .carousel-item{
+        height: 60vh;
+    }
 
+    .slide__img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 800px;
+    }
 }
 
 /*----- Large devices -----*/
 @media screen and (min-width: 1024px){
+
+    .carousel-item{
+        height: 80vh;
+    }
+
+    .slide__img{
+        max-width: 1050px;
+    }
+
     .products__announce{
-        width: 70%;
+        width: 50%;
         height: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 1rem;
     }
 
     .icon__announce{
@@ -171,5 +210,9 @@ a:hover{
     
     .text__announce{
         font-size: 2rem;
+    }
+
+    .carousel__container{
+        background-color: var(--title-color);
     }
 }
