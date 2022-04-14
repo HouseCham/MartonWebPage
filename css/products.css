@@ -1,0 +1,76 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root{
+    --star-color: rgb(234, 214, 37);
+    --store-color: rgba(89, 89, 89, 0.649);
+    --title-color: #3f3f95 ;
+    --price-color: # ;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.products__title{
+    text-align: center;
+    color: var(--title-color);
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.card{
+    margin: 2rem auto 4rem auto;
+    min-width: 70vw;
+    border-radius: 1rem;
+    border-width: 0.15rem;
+}
+
+.product__store{
+    color: var(--store-color);
+    font-weight: 500;
+}
+
+.product__title{
+    color: var(--title-color);
+}
+
+.product__star{
+    color: var(--star-color);
+    font-size: 1.5rem;
+}
+
+.product__price{
+    text-align: center;
+    color: green;
+}
+
+.score{
+    width: 60%;
+    margin-left: 20%;
+}
+
+/*---------- Small devices ----------*/
+@media screen and (min-width:568px){
+
+}
+
+/*---------- Medium devices ----------*/
+@media screen and (min-width:568px){
+
+}
+
+@media screen and (min-width: 768px){
+    .card{
+        min-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/*----- Large devices -----*/
+@media screen and (min-width: 1024px){
+    .card{
+        min-width: 330px;
+    }
+}
