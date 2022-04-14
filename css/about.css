@@ -102,3 +102,14 @@ body{
 .about__subtext{
     color: var(--black-color);
 }
+
+.emergency__contact{
+    font-size: 13px;
+}
+
+/*---------- Medium devices ----------*/
+@media screen and (min-width:568px){
+    .emergency__contact{
+        font-size: 1.1rem;
+    }
+}
