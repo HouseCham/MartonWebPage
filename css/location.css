@@ -120,6 +120,10 @@ body{
     cursor: pointer;
 }
 
+.emergency__contact{
+    font-size: 13px;
+}
+
 @media screen and (min-width:568px){
 
     .frame__map{
@@ -129,6 +133,10 @@ body{
     .map__text{
         width: 80%;
         height: 60vh;
+    }
+    
+    .emergency__contact{
+        font-size: 1.1rem;
     }
 }
 
