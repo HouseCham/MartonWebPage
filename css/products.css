@@ -1,11 +1,16 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;500;600&family=Slabo+27px&display=swap');
 
 :root{
     --star-color: rgb(234, 214, 37);
     --store-color: rgba(89, 89, 89, 0.649);
     --title-color: #3f3f95 ;
-    --price-color: # ;
+    --price-color: #000 ;
+    --old-price: #7b7b7ba8;
+    --aesthetic: #000000;
+    --food: #d35723;
+    --health: #00ac70;
+    --discount: #c102029d;
 }
 
 body{
@@ -42,6 +47,10 @@ body{
 
 .product__price{
     text-align: center;
+    color: var(--price-color);
+}
+
+.discount-price{
     color: green;
 }
 
@@ -50,20 +59,67 @@ body{
     margin-left: 20%;
 }
 
-.emergency__contact{
-    font-size: 13px;
+.product-section{
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+    border-radius: 1rem;
+}
+
+.discount-section{
+    border-radius: 1rem;
+    width: 95vw;
+    margin-left: 3vw;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.section-title{
+    padding-top: 0.7rem;
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.discount-title{
+    font-family: 'Slabo 27px', serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.old-price{
+    color: var(--old-price);
+    text-decoration: line-through;
+    text-align: center;
+}
+
+.aesthetic{
+    background: var(--aesthetic);
+}
+
+.food{
+    background: var(--food);
+}
+
+.health{
+    background: var(--health);
+}
+
+.discount{
+    background: var(--discount);
 }
 
 /*---------- Small devices ----------*/
 @media screen and (min-width:568px){
-
+    .discount-title{
+        font-size: 3rem;
+        font-weight: 600;
+    }
 }
 
 /*---------- Medium devices ----------*/
 @media screen and (min-width:568px){
-    .emergency__contact{
-        font-size: 1.1rem;
-    }
+
 }
 
 @media screen and (min-width: 768px){
