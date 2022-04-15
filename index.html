@@ -29,7 +29,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand marton__container" href="index.html">
+            <a class="navbar-brand marton__container" href="/index.html">
                 <span class="marton__title">YoSoyMarton</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse principal__menu" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="products.html">
+                        <a class="nav-link active" aria-current="page" href="pages/services/products.html">
                             <span class="home__navbar navbar__option equisde">Tienda</span>
                         </a>
                     </li>
@@ -51,15 +51,15 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item services__item" href="medicine.html">Medicina
+                                <a class="dropdown-item services__item" href="pages/services/medicine.html">Medicina
                                     preventiva e interna</a>
                             </li>
                             <li>
-                                <a class="dropdown-item services__item" href="consult.html">Consulta y
+                                <a class="dropdown-item services__item" href="pages/services/consult.html">Consulta y
                                     cirugía</a>
                             </li>
                             <li>
-                                <a class="dropdown-item services__item" href="products.html">Tienda</a>
+                                <a class="dropdown-item services__item" href="pages/services/products.html">Tienda</a>
                             </li>
                             <li>
                                 <a class="dropdown-item services__item"
@@ -68,12 +68,12 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">
+                        <a class="nav-link" href="#about">
                             <span class="navbar__option about__info">Acerca de</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="location.html">
+                        <a class="nav-link" href="#location">
                             <span class="navbar__option location__span">Ubicación</span>
                         </a>
                     </li>
@@ -88,9 +88,8 @@
             </div>
         </div>
     </nav>
-
     <!-- Carousel -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide carousel__container" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel__container mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="imgs/slide1.png" class="d-block w-100 slide__img" alt="...">
@@ -105,10 +104,10 @@
             </span>
         </h1>
     </section>
-    <section class="announces container pt-3 text-center">
+    <section class="announces container pt-3 text-center mb-5">
         <div class="row">
             <div class="col">
-                <a href="products.html" class="col">
+                <a href="/pages/services/products.html" class="col">
                     <div class="products__announce articles__announce">
                         <i class="uil uil-shopping-cart icon__announce"></i>
                         <br/>
@@ -142,7 +141,163 @@
             </div>
         </div>
     </section>
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- About -->
+    <div class="container-fluid py-5 mb-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase about__title">
+                    Acerca de
+                </h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 pb-4 pb-lg-0">
+                        <img src="/imgs/about_img.jpg" alt="" class="img-fluid rounded-circle w-100 about__img">
+                    </div>
+                    <div class="col-lg-7 div__map">
+                        <h3 class="mb-4 about__subtitle">Martín Ramírez Vallejo</h3>
+                        <span class="about__text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Consectetur assumenda eveniet est pariatur cupiditate, 
+                            tempora sunt odio quis. Illum enim saepe aspernatur corrupti 
+                            quam magni vero ex aperiam nemo perferendis.
+                        </span>
+                        <div class="row mb-3 about__data mt-3">
+                            <div class="col-sm-6 py-2">
+                                <h6 class="sub-subtitle-about">
+                                    Teléfono:
+                                    <span class="subtext-about">
+                                        312 133 2750
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-6 py-2">
+                                <h6 class="sub-subtitle-about">
+                                    Educacion:
+                                    <span class="subtext-about">
+                                        Médico Veterinario
+                                    </span>
+                                </h6>
+                            </div>
+                            <div class="col-sm-6 py-2">
+                                <h6 class="sub-subtitle-about">
+                                    Experiencia:
+                                    <span class="subtext-about">
+                                        +10 años
+                                    </span>
+                                </h6>
+                            </div>
+                        </div>
+                        <!-- Buttons -->
+                        <a href="/pages/services/consult.html" class="btn btn-outline-primary mr-4">Pide una consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Parallax -->
+    <section class="effect first">
+        <span class="effect-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste similique laboriosam iure dolore. 
+            Soluta minima nam, quia aspernatur consequuntur molestias blanditiis sunt mollitia quasi 
+            veritatis atque ea odit, itaque quae.
+        </span>
+    </section>
+
+    <section id="parallax" class="text-center text-white">
+        <div>
+            <div class="row parallax-container">
+                <div class="col-sm-12 my-parallax">
+                    <h2 class="display-4 font-weight-bold">YoSoyMárton</h2>
+                    <p class="inner-text-parallax">
+                        Porque nos preocupamos por la salud y bienestar de tu mascota
+                    </p>
+                    <a href="#" class="btn btn-primary">Efecto Parallax</a>
+                </div>
+            </div>
+        </div>
+        <div class="parallax" 
+        data-parallax-image="https://images.pexels.com/photos/9040438/pexels-photo-9040438.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></div>
+    </section>
+
+    <section class="effect second">
+        <span class="effect-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste similique laboriosam iure dolore. 
+            Soluta minima nam, quia aspernatur consequuntur molestias blanditiis sunt mollitia quasi 
+            veritatis atque ea odit, itaque quae.
+        </span>
+    </section>
+
+    <!-- Location -->
+    <section class="responsive container-fluid py-5 map map__container mt-3" id="location">
+        <div class="position-relative d-flex justify-content-center">
+            <div class="map__title row">
+                <h1 class="title">¿Dónde puedes encontrarnos?</h1>
+                <br />
+                <div class="col-md-1"></div>
+                <div class="map__google col-md-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21615.466226180943!2d-103.75256386978863!3d19.268087170202605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7d5425881e9c3d9!2sHospital%20Veterinario%20Marton!5e0!3m2!1ses-419!2smx!4v1649803304207!5m2!1ses-419!2smx"
+                        width="100" height="100" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="frame__map"></iframe>
+                </div>
+                <div class="map__text row col-sm-12 col-md-4 py-2">
+                    <div class="py-2">
+                        <h6 class="about__sub-subtitle">
+                            Nos encontramos ubicados en la Avenida Pablo Silva
+                            no. 455, Lomas del Centenario; Villa de Álvarez, Colima
+                        </h6>
+                    </div>
+                    <div class="py-2">
+                        <h6 class="about__sub-subtitle">
+                            <i class="uil uil-clock icon__map"></i>
+                            <span class="about__subtext">
+                                8:00 - 20:00 hrs
+                            </span>
+                        </h6>
+                    </div>
+                    <!-- Buttons -->
+                    <a href="/pages/services/consult.html" class="btn btn-outline-primary mr-4 mb-0 map__btn">
+                        Pide una consulta
+                    </a>
+                </div>
+
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container">
+            <nav class="row">
+                <!-- Logo -->
+                <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+                    <img src="imgs/spike_face_logo.png" alt="Logo weston" class="img-logo mr-2 footer__img">
+                    YoSoyMárton
+                </a>
+                <!--  Social -->
+                <ul class="col-4 list-unstyled footer__item">
+                    <li>
+                        <a href="https://www.facebook.com/YosoyMarton" class="text-reset" target="blank">
+                            <i class="uil uil-facebook footer-icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/YosoyMarton" class="text-reset" target="blank">
+                            <i class="uil uil-twitter footer-icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/YosoyMarton" class="text-reset" target="blank">
+                            <i class="uil uil-instagram footer-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- Own JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Parallax -->
+    <script src="https://marrio-h.github.io/universal-parallax/dist/universal-parallax.min.js"></script>
+    <script>
+		new universalParallax().init({
+			speed: 3
+		});
+	</script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
