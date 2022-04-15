@@ -14,6 +14,8 @@
     --hover-button-color: #FFF;
     --salmon-color: #ff5b49;
     --white-color: #FFF;
+    --about-text: #7b7b7b;
+    --parallax: #0076a4;
 
     --red-color: #cc1400;
     --green-color: #00c26e;
@@ -55,6 +57,13 @@ a{
 }
 a:hover{
     color: #000;
+}
+
+footer{
+    margin-top: 4rem;
+    background: var(--title-color);
+    text-align: center;
+    vertical-align: middle;
 }
 
 .header__main{
@@ -156,6 +165,181 @@ a:hover{
     display: block;
 }
 
+.sub-subtitle-about{
+    color: var(--title-hover-color);
+}
+
+.subtext-about{
+    color: var(#000);
+}
+
+/*========== Location ==========*/
+
+.title{
+    color: var(--title-color);
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.map__google{
+    align-items: center;
+}
+
+.frame__map{
+    margin-bottom: 1rem;
+    width: 80vw;
+    height: 39vh;
+    margin-left: 7.5vw;
+}
+.map__text{
+    background: var(--title-color);
+    width: 80%;
+    max-height: 60%;
+    margin-left: 10%;
+    border-radius: 1rem;
+    color: var(--white-color);
+}
+
+.map__title{
+    max-height: 70vh;
+}
+
+.icon__map, .about__subtext{
+    font-size: 1.2rem;
+}
+
+.icon__map{
+    font-weight: bold;
+}
+.map__btn{
+    background: var(--white-color);
+    width: 50%;
+    vertical-align: middle;
+    height: 30%;
+    margin-left: 25%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.footer__item{
+    display: block;
+    height: 80%;
+    margin: 1% 0 1% auto;
+    margin-top: 0.9rem;
+}
+
+.footer__img{
+    max-width: 50px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.4rem;
+}
+
+.footer__rights{
+    font-size: 0.8rem;
+}
+
+.footer-icon{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-right: 1rem;
+}
+
+/*========== About ==========*/
+.about__title{
+    color: var(--title-color);
+}
+
+.about__img{
+    max-width: 410px;
+}
+
+.sub-subtitle-about{
+    color: var(--title-color);
+    text-align: left;
+}
+
+.subtext-about{
+    text-align: justify;
+    color: var(--about-text);
+}
+
+/* ---------- Parallax ---------- */
+.effect{
+    background: var(--parallax);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.first{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.second{
+    border-radius: 0 0 1rem 1rem;
+}
+
+.effect-text{
+    width: 70vw;
+    font-size: 1.5rem;
+}
+
+.parallax-container{
+    padding-left: 0;
+    width: 100vw;
+}
+
+.my-parallax{
+    padding: 7rem 0;
+    margin-left: 0;
+}
+
+.inner-text-parallax{
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -100;
+}
+
+.parallax {
+	position: fixed;
+	top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+
+	/* BG behaviour */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width:460px){
+    footer{
+        margin-top: 1rem;
+    }
+
+    .map__btn{
+        padding: 1rem;
+    }
+}
+
 /*---------- Medium devices ----------*/
 @media screen and (min-width:568px){
     .products__announce{
@@ -169,6 +353,14 @@ a:hover{
     .emergency__contact{
         font-size: 1.1rem;
     }
+
+    .frame__map{
+        width: 80%;
+    }
+
+    .map__text{
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -181,6 +373,44 @@ a:hover{
         margin-right: auto;
         display: block;
         max-width: 800px;
+    }
+
+    .footer-icon{
+        font-size: 2rem;
+    }
+
+    .title{
+        max-height: 10vh;
+    }
+
+    .frame__map{
+        width: 45vw;
+        margin-left: auto;
+        height: 50vh;
+    }
+
+    .map__text{
+        width: 30vw;
+        margin-right: auto;
+        height: 80vh;
+    }
+
+    .about__sub-subtitle{
+        font-size: 1.1rem;
+    }
+
+    .icon__map, .about__subtext{
+        font-size: 1.2rem;
+    }
+
+    .map__btn{
+        max-height: 25%;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .effect-text{
+        font-size: 2rem;
     }
 }
 
@@ -214,5 +444,19 @@ a:hover{
 
     .carousel__container{
         background-color: var(--title-color);
+    }
+
+    .about__sub-subtitle{
+        font-size: 1.5rem;
+    }
+
+    .icon__map, .about__subtext{
+        font-size: 1.5rem;
+    }
+
+    .map__btn{
+        max-height: 28%;
+        padding-top: 0.4rem;
+        font-size: 1.4rem;
     }
 }
